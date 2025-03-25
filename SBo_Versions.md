@@ -1,17 +1,18 @@
- Standalone Builds:
+Standalone Builds:
 development/hexedit              -good (1.6)
 libraries/afflib                 -good (3.7.20)
 network/tcpflow                  -good (1.6.1)
 system/foremost                  -good (1.5.7) 
-system/sleuthkit                 -good (4.12.1)
-libraries/libewf                 -check (20140816)
-libraries/libvhdi                -check (20240303)
-libraries/libvmdk                -check (20240303)
-libraries/libvslvm               -awaiting submission (20240301) - wait for new TSK
+system/sleuthkit                 -ready (4.13.0) -needs further testing
+libraries/libewf                 -good (20140816)
+libraries/libvhdi                -ready (20240509)
+libraries/libvmdk                -ready (20240510)
+libraries/libbfio                -ready (20240414)
+libraries/libvslvm               -ready (20240504)
+libraries/libqcow                -ready (20240308)
 system/bulk_extractor            -check (2.1.0)
 libraries/libpff                 -check (20231205)
 libraries/libwrc                 -check (20240421)
-libraries/libbfio                -new submission (20240414) - wait for new TSK
 python/dpkt                      -check (1.9.8)
 python/python3-elasticsearch     (rename)
 
@@ -42,7 +43,6 @@ libraries/libfwnt                -check (20220922)
 libraries/libluksde              -check (20221103)
 libraries/libmodi                -check (20221023)
 libraries/libphdi                -check (20221025)
-libraries/libqcow                -check (20221124)
 libraries/libsigscan             -check (20230109)
 libraries/libsmdev               -check (20221028)
 libraries/libsmraw               -check (20221028)
