@@ -33,58 +33,55 @@
 
 function check_download()
 {
-  TESTURL=3D"$1"
-  DOMAIN=3D"$(echo "$TESTURL" | cut -d"/" -f 3)"
+  TESTURL="$1"
+  DOMAIN="$(echo "$TESTURL" | cut -d"/" -f 3)"
 
   # Let's first prep github addresses
-  if [ "$DOMAIN" =3D=3D "github.com" ]; then
-    OWNER=3D$(echo "$TESTURL" | cut -d"/" -f4)
-    PROJECT=3D$(echo "$TESTURL" | cut -d"/" -f5)
+  if [ "$DOMAIN" == "github.com" ]; then
+    OWNER=$(echo "$TESTURL" | cut -d"/" -f4)
+    PROJECT=$(echo "$TESTURL" | cut -d"/" -f5)
 
     # Check for release urls, which don't need modification
-    if [ "$(echo "$TESTURL" | cut -d"/" -f6)" =3D=3D "releases" ]; then
-      NEWURL=3D"$TESTURL"
+    if [ "$(echo "$TESTURL" | cut -d"/" -f6)" == "releases" ]; then
+      NEWURL="$TESTURL"
     # Catch tag versions
-    elif [ "$(echo "$TESTURL" | cut -d"/" -f7-8)" =3D=3D "refs/tags" ]; the=
-n
+    elif [ "$(echo "$TESTURL" | cut -d"/" -f7-8)" == "refs/tags" ]; then
       # Extract the version from the URL to get the right tag and use that
       # to get the right version to include in the filename
-      TAGVER=3D$(basename "$TESTURL" | rev | cut -d. -f3- | rev)
-      NEWURL=3D"https://$DOMAIN/$OWNER/$PROJECT/archive/refs/tags/$TAGVER/$=
+      TAGVER=$(basename "$TESTURL" | rev | cut -d. -f3- | rev)
+      NEWURL="https://$DOMAIN/$OWNER/$PROJECT/archive/refs/tags/$TAGVER/$=
 PROJECT-${TAGVER//v/ }.tar.gz"
     # Check for commit ID
-    # Need to check for 41 chars since the url includes a newline that isn'=
-t stripped
+    # Need to check for 41 chars since the url includes a newline that isn'= t stripped
     elif [ "$(echo "$TESTURL" | cut -d"/" -f7 | cut -d"." -f1 | wc -m)" -eq=
  41 ]; then
-      COMMITID=3D$(echo "$TESTURL" | cut -d"/" -f7 | cut -d"." -f1)
-      NEWURL=3D"https://$DOMAIN/$OWNER/$PROJECT/archive/${COMMITID:0:7}/$PR=
+      COMMITID=$(echo "$TESTURL" | cut -d"/" -f7 | cut -d"." -f1)
+      NEWURL="https://$DOMAIN/$OWNER/$PROJECT/archive/${COMMITID:0:7}/$PR=
 OJECT-$COMMITID.tar.gz"
     # Just return the url if it doesn't match the above
     else
-      NEWURL=3D"$TESTURL"
+      NEWURL="$TESTURL"
     fi
 
-  # If we're using a hashed python.org link, switch to a proper versioned l=
-ink
-  elif [ "$DOMAIN" =3D=3D "files.pythonhosted.org" ] || [ "$DOMAIN" =3D=3D =
+  # If we're using a hashed python.org link, switch to a proper versioned l= ink
+  elif [ "$DOMAIN" == "files.pythonhosted.org" ] || [ "$DOMAIN" == =
 "pypi.python.org" ]; then
     # Check if we're using a hashed url by seeing if the parent folder is
     # 61 characters (the length of the hash)
-    if [ "$(echo "$TESTURL" | cut -d"/" -f7 | wc -c)" =3D=3D "61" ]; then
-      PROJECT=3D"$(echo "$TESTURL" | cut -d"/" -f8 | cut -d- -f1)"
-      VERSION=3D"$(echo "$TESTURL" | cut -d"/" -f8 | cut -d- -f2 | rev | cu=
+    if [ "$(echo "$TESTURL" | cut -d"/" -f7 | wc -c)" == "61" ]; then
+      PROJECT="$(echo "$TESTURL" | cut -d"/" -f8 | cut -d- -f1)"
+      VERSION="$(echo "$TESTURL" | cut -d"/" -f8 | cut -d- -f2 | rev | cu=
 t -d"." -f3- )"
-      NEWURL=3D"https://files.pythonhosted.org/packages/source/${PROJECT::1=
+      NEWURL="https://files.pythonhosted.org/packages/source/${PROJECT::1=
 }/${PROJECT}/${PROJECT}-${VERSION}.tar.gz"
     else
-      NEWURL=3D"$TESTURL"
+      NEWURL="$TESTURL"
     fi
 
   # Anything else, just ignore it.
   # Can add future catches if needed
   else
-    NEWURL=3D"$TESTURL"
+    NEWURL="$TESTURL"
   fi
 
   # Return our correct URL
