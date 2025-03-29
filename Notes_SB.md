@@ -29,7 +29,7 @@
 
 - Open an sshfs mount from the host to the project dir on devel box (as
     above).
-- Create (if not already) a `READY` directory to move completed Builds
+- Create (if not already) a `UpdatesReady` directory to move completed Builds
     into - ready for submission.
 - run `ssh-agent` to make scripts non-interactive:
     - `exec ssh-agent bash`
@@ -42,5 +42,5 @@
 5) Remove the extracted source dir
 6) Run `LibyalSolurce.sh` on the source tarball to move it to Ionos.
 7) Run `Build.sh` on the target directory to build the package and lint.
-8) Move the completed build to `READY`
+8) Move the completed build to `UpdatesReady`
 
