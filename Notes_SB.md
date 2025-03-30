@@ -36,8 +36,8 @@
     - `ssh-add ~/.ssh/id_rsa`
     - `ssh-add -l`
 1) Run `CheckConflict.sh` on the target directory
-2) Download the source to the SB Project directory.
-3) Open and edit the `.info` file for version/download/MD5
+2) Open and edit the `.info` file for version/download/MD5
+3) Run `Md5DL.sh` do download the source and hash it.
 4) Extract source and check for Document/requirement changes, etc.
 5) Remove the extracted source dir
 6) Run `LibyalSolurce.sh` on the source tarball to move it to Ionos.

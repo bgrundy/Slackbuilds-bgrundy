@@ -10,10 +10,10 @@ libraries/libvmdk                -ready (20240510)
 libraries/libbfio                -ready (20240414)
 libraries/libvslvm               -ready (20240504)
 libraries/libqcow                -ready (20240308)
-system/bulk_extractor            -check (2.1.0)
-libraries/libpff                 -check (20231205)
-libraries/libwrc                 -check (20240421)
-python/dpkt                      -check (1.9.8)
+system/bulk_extractor            -ready (2.1.1)
+libraries/libpff                 -good (20231205)
+libraries/libwrc                 -good (20240421)
+python/dpkt                      -good (1.9.8)
 python/python3-elasticsearch     (rename)
 
 # volatility3
@@ -21,7 +21,7 @@ python/pefile                    -check (2023.2.7)
 python/leechcorepyc              -optional: new submission required
 misc/yara                        -check (4.5.1)
 python/python3-yara              -check (4.5.0)
-system/volatility3               -check (2.7.0)
+system/volatility3               -needs update (2.11.0)
 
 # volatility
 python/python2-yara              -check (4.5.0)
