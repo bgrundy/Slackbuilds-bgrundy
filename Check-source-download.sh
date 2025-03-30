@@ -64,8 +64,7 @@ OJECT-$COMMITID.tar.gz"
     fi
 
   # If we're using a hashed python.org link, switch to a proper versioned l= ink
-  elif [ "$DOMAIN" == "files.pythonhosted.org" ] || [ "$DOMAIN" == =
-"pypi.python.org" ]; then
+  elif [ "$DOMAIN" == "files.pythonhosted.org" ] || [ "$DOMAIN" == "pypi.python.org" ]; then
     # Check if we're using a hashed url by seeing if the parent folder is
     # 61 characters (the length of the hash)
     if [ "$(echo "$TESTURL" | cut -d"/" -f7 | wc -c)" == "61" ]; then
