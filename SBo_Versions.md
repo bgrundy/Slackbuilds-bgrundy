@@ -1,6 +1,6 @@
 Standalone Builds:
 development/hexedit              -good (1.6)
-libraries/afflib                 -good (3.7.20)
+libraries/afflib                 -ready (3.7.21)
 network/tcpflow                  -good (1.6.1)
 system/foremost                  -good (1.5.7) 
 system/sleuthkit                 -ready (4.13.0) -needs further testing
@@ -17,16 +17,16 @@ python/dpkt                      -good (1.9.8)
 python/python3-elasticsearch     (rename)
 
 # volatility3
-python/pefile                    -check (2023.2.7)
+python/pefile                    -ready (2024.8.26)
 python/leechcorepyc              -optional: new submission required
-misc/yara                        -check (4.5.1)
-python/python3-yara              -check (4.5.0)
-system/volatility3               -needs update (2.11.0)
+misc/yara                        -ready (4.5.2)
+python/python3-yara              -good (4.5.0)
+system/volatility3               -ready (2.11.0)
 
 # volatility
-python/python2-yara              -check (4.5.0)
-python/python2-distorm           -check (3.5.2b)
-system/volatility                -check (2.6.1)
+python/python2-yara              -good (4.5.0)
+python/python2-distorm           -good (3.5.2b)
+system/volatility                -good (2.6.1)
 
 # dfvfs
 python/dfdatetime                -check (20230506)

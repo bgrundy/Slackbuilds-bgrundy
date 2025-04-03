@@ -16,4 +16,4 @@ PKGNAM=$(basename $DLURL)
 # download the package and check the hash
 wget $DLURL
 PKGMD5=$(md5sum $PKGNAM | awk '{print $1}')
-echo "package md5 is: $PKGMD5"
+echo "$PKGMD5 is the package md5sum"
