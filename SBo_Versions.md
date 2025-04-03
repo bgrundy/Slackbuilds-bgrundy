@@ -1,6 +1,7 @@
 Standalone Builds:
 development/hexedit              -good (1.6)
 libraries/afflib                 -submitted (3.7.21)
+libraries/aff4                   -new (3.3.rc3) fails on spdlog error
 network/tcpflow                  -good (1.6.1)
 system/foremost                  -good (1.5.7) 
 system/sleuthkit                 -wait (4.13.0) -wait for 4.13.1
