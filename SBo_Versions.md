@@ -1,27 +1,27 @@
 Standalone Builds:
 development/hexedit              -good (1.6)
-libraries/afflib                 -ready (3.7.21)
+libraries/afflib                 -submitted (3.7.21)
 network/tcpflow                  -good (1.6.1)
 system/foremost                  -good (1.5.7) 
-system/sleuthkit                 -ready (4.13.0) -needs further testing
+system/sleuthkit                 -wait (4.13.0) -wait for 4.13.1
 libraries/libewf                 -good (20140816)
-libraries/libvhdi                -ready (20240509)
-libraries/libvmdk                -ready (20240510)
-libraries/libbfio                -ready (20240414)
-libraries/libvslvm               -ready (20240504)
-libraries/libqcow                -ready (20240308)
-system/bulk_extractor            -ready (2.1.1)
+libraries/libvhdi                -submitted (20240509)
+libraries/libvmdk                -submitted (20240510)
+libraries/libbfio                -ready (20240414) -wait for TSK update
+libraries/libvslvm               -ready (20240504) -wait for TSK update 
+libraries/libqcow                -submitted (20240308)
+system/bulk_extractor            -submitted (2.1.1)
 libraries/libpff                 -good (20231205)
 libraries/libwrc                 -good (20240421)
 python/dpkt                      -good (1.9.8)
 python/python3-elasticsearch     (rename)
 
 # volatility3
-python/pefile                    -ready (2024.8.26)
+python/pefile                    -submitted (2024.8.26)
 python/leechcorepyc              -optional: new submission required
-misc/yara                        -ready (4.5.2)
+misc/yara                        -submitted (4.5.2)
 python/python3-yara              -good (4.5.0)
-system/volatility3               -ready (2.11.0)
+system/volatility3               -submitted (2.11.0)
 
 # volatility
 python/python2-yara              -good (4.5.0)
