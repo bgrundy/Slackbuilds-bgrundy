@@ -26,6 +26,21 @@
     sshfs qemu:Projects/slackbuilds-bgrundy sshfsdir/
     ```
 ## Workflow
+1) Update `SBo_Versions.md`:
+- start with a single vim session for `SBo_Versions.md` with a single
+    `vert term`
+- Open `qutebrowser` and size to fit. Open a tab to gift-ppa
+- run `sbocheck`
+- run `CheckConflict.sh <pkgname>` on each package to see if there were
+    any upstream changes. Make sure to omit the trailing slash on
+    `<pkgname>`.
+- The following can be run in a macro `qg` to start recording, `q` to
+    stop recording, and `@g` to replay:
+    - move up 8 lines in the `CheckConflict.sh` output to the homepage.
+    - use `gx` (we are in a vim term) to open the browser on the `<pkgname>`
+      home directory to check if updates are needed - record these in
+      `SBO_Versions.md`
+- close the browser tab with `d`.
 
 - Open an sshfs mount from the host to the project dir on devel box (as
     above).
@@ -35,7 +50,8 @@
     - `exec ssh-agent bash`
     - `ssh-add ~/.ssh/id_rsa`
     - `ssh-add -l`
-1) Run `CheckConflict.sh` on the target directory
+1) Run `CheckConflict.sh` on the target directory (see above for
+granular details)
 2) Open and edit the `.info` file for version/download/MD5
 3) Run `Md5DL.sh` do download the source and hash it.
 4) Extract source and check for Document/requirement changes, etc.
