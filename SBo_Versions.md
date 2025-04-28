@@ -1,28 +1,28 @@
 Standalone Builds:
 development/hexedit              -good (1.6)
-libraries/afflib                 -submitted (3.7.21)
+libraries/afflib                 -good (3.7.21)
 libraries/aff4                   -new (3.3.rc3) fails on fmt error (upgrade fmt?)
 network/tcpflow                  -good (1.6.1)
 system/foremost                  -good (1.5.7) 
-system/sleuthkit                 -wait (4.13.0) -wait for 4.13.1
+system/sleuthkit                 -needs update (4.14.0)
 libraries/libewf                 -good (20140816)
-libraries/libvhdi                -submitted (20240509)
-libraries/libvmdk                -submitted (20240510)
-libraries/libbfio                -ready (20240414) -wait for TSK update
-libraries/libvslvm               -ready (20240504) -wait for TSK update 
-libraries/libqcow                -submitted (20240308)
-system/bulk_extractor            -submitted (2.1.1)
+libraries/libvhdi                -good (20240509)
+libraries/libvmdk                -good (20240510)
+libraries/libbfio                -ready (20240414)  -still need to wait
+libraries/libvslvm               -ready (20240504)  -still need to wait
+libraries/libqcow                -good (20240308)
+system/bulk_extractor            -good (2.1.1)
 libraries/libpff                 -good (20231205)
 libraries/libwrc                 -good (20240421)
 python/dpkt                      -good (1.9.8)
 python/python3-elasticsearch     (rename)
 
 # volatility3
-python/pefile                    -submitted (2024.8.26)
+python/pefile                    -good (2024.8.26)
 python/leechcorepyc              -optional: new submission required
-misc/yara                        -submitted (4.5.2)
+misc/yara                        -good (4.5.2)
 python/python3-yara              -good (4.5.0)
-system/volatility3               -submitted (2.11.0)
+system/volatility3               -good (2.11.0)
 
 # volatility
 python/python2-yara              -good (4.5.0)
