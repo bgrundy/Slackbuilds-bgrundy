@@ -11,6 +11,10 @@
     - if that does not work, remove the "v" from the version number and
       try again.
 - ssh into the VM using "-Y" and X-forwarding so firefox can be used.
+    - This works well in -current with Hypr/Wayland.
+    - Set FF to use vimium and bookmarks.
+    - Change "downloads" dir to the local working repo.
+    - add "Gruvbox Material Soft Theme"
 - in the `./CheckConflict.sh`, use `gx` on the home page URL to pull up FF
   and download the source tar.gz.
 - in the `LibyalSource.sh`, use `ssh-agent` and `ssh-add` to make the
@@ -24,5 +28,7 @@
     mkdir sshfsdir
     sshfs qemu:Projects/slackbuilds-bgrundy sshfsdir/
     ```
+    - this may not be needed with ssh forwarding an FF running good on
+        Wayland.
 
 

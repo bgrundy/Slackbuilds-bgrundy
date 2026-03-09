@@ -1,31 +1,34 @@
 # Standalone Builds:
 development/hexedit              -good (1.6)
-libraries/afflib                 -good (3.7.20)
+libraries/afflib                 -good (3.7.21)
 network/tcpflow                  -good (1.6.1)
 system/foremost                  -good (1.5.7) 
-system/sleuthkit                 -good (4.12.1)
-libraries/libewf                 -submitted on 20240821 (20140816)
-libraries/libvhdi                -submitted on 20240821 (20240303)
-libraries/libvmdk                -submitted on 20240821 (20240303)
-libraries/libvslvm               -awaiting submission (20240301) - wait for new TSK
-system/bulk_extractor            -submitted on 20240821 (2.1.0)
-libraries/libpff                 -submitted on 20240821 (20231205)
-libraries/libwrc                 -submitted on 20240821 (20240421)
-libraries/libbfio                -new submission (20240414) - wait for new TSK
+system/sleuthkit                 -good (4.12.0)
+libraries/libewf                 -good (20140816)
+libraries/libvhdi                -needs update (20251119)
+libraries/libvmdk                -good (20240510)
+libraries/libvslvm               -needs update (20240504) - wait for new TSK
+system/bulk_extractor            -good (2.1.1)
+libraries/libpff                 -good (20231205)
+libraries/libwrc                 -good (20240421)
+libraries/libbfio                -needs update (20240414) - wait for new TSK
 python/dpkt                      -good (1.9.8)
-python/python3-elasticsearch     (rename)
+python/python3-elasticsearch     (abandon - elasticsearch5)
 
 # volatility3
-python/pefile                    -good (2023.2.7)
+python/pefile                    -good (2024.8.26)
 python/leechcorepyc              -optional: new submission required
-misc/yara                        -submitted on 20240821 (4.5.1)
-python/python3-yara              -submitted on 20240821 (4.5.0)
-system/volatility3               -submitted on 20240821 (2.7.0)
+misc/yara                        -needs update (4.5.5)
+python/python3-yara              -needs update (4.5.2)
+system/volatility3               -needs update (2.27.0)
 
 # volatility
-python/python2-yara              -submitted on 20240821 (4.5.0)
+python/python2-yara              -needs update (4.5.2)
 python/python2-distorm           -good (3.5.2b)
 system/volatility                -good (2.6.1)
+
+### checked to here
+
 
 # dfvfs
 python/dfdatetime                -check (20230506)
