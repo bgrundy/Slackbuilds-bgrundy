@@ -1,5 +1,6 @@
-# Standalone Builds:
+Standalone Builds:
 development/hexedit              -good (1.6)
+<<<<<<< HEAD
 libraries/afflib                 -good (3.7.21)
 network/tcpflow                  -good (1.6.1)
 system/foremost                  -good (1.5.7) 
@@ -12,18 +13,43 @@ system/bulk_extractor            -good (2.1.1)
 libraries/libpff                 -good (20231205)
 libraries/libwrc                 -good (20240421)
 libraries/libbfio                -needs update (20240414) - wait for new TSK
+=======
+libraries/afflib                 -submitted (3.7.22)
+libraries/aff4                   -new (3.3.rc3) fails on fmt error (upgrade fmt?)
+network/tcpflow                  -good (1.6.1)
+system/foremost                  -good (1.5.7) 
+system/sleuthkit                 -good (4.14.0)
+libraries/libewf                 -good (20140816)
+libraries/libvhdi                -good (20240509)
+libraries/libvmdk                -good (20240510)
+libraries/libbfio                -ready (20240414)  -still need to wait
+libraries/libvslvm               -ready (20240504)  -still need to wait
+libraries/libqcow                -good (20240308)
+system/bulk_extractor            -good (2.1.1)
+libraries/libpff                 -good (20231205)
+libraries/libwrc                 -good (20240421)
+>>>>>>> 202502
 python/dpkt                      -good (1.9.8)
 python/python3-elasticsearch     (abandon - elasticsearch5)
 
 # volatility3
 python/pefile                    -good (2024.8.26)
 python/leechcorepyc              -optional: new submission required
+<<<<<<< HEAD
 misc/yara                        -needs update (4.5.5)
 python/python3-yara              -needs update (4.5.2)
 system/volatility3               -needs update (2.27.0)
 
 # volatility
 python/python2-yara              -needs update (4.5.2)
+=======
+misc/yara                        -good (4.5.2)
+python/python3-yara              -good (4.5.0)
+system/volatility3               -good (2.11.0)
+
+# volatility
+python/python2-yara              -good (4.5.0)
+>>>>>>> 202502
 python/python2-distorm           -good (3.5.2b)
 system/volatility                -good (2.6.1)
 
@@ -45,7 +71,6 @@ libraries/libfwnt                -check (20220922)
 libraries/libluksde              -check (20221103)
 libraries/libmodi                -check (20221023)
 libraries/libphdi                -check (20221025)
-libraries/libqcow                -check (20221124)
 libraries/libsigscan             -check (20230109)
 libraries/libsmdev               -check (20221028)
 libraries/libsmraw               -check (20221028)
@@ -62,7 +87,7 @@ python/acstore                   -check (20230519)
 python/python3-bencode           -check (4.0.0)
 python/dfwinreg                  -check (20221218)
 python/python3-pkgconfig         -check (1.5.5)
-python/python3-lz4               -submitted on 20240821 (4.3.3)
+python/python3-lz4               -check (4.3.3)
 libraries/libcaes                -check (20230406)
 libraries/libcreg                -check (20221022)
 libraries/libesedb               -check (20230318)

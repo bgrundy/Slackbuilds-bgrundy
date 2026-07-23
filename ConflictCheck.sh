@@ -6,6 +6,10 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color
 MISMATCH=0
 
+# set the name of the program we are building
+# and remove the trailing slash
+PRGNAM=${1%/}
+
 # Check the MD5 of SBo repo vs. Local Repo
 echo
 SBO=$(sudo sbofind -te $1 | grep SBo)

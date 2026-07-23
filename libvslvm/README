@@ -9,3 +9,7 @@ Not supported:
 * multiple segments
 * non-linear stripes
 * snapshots
+
+Note that to use libvslvm with the Sleuthkit, a stand-alone version of 
+libbfio (available on SlackBuilds.org) is needed to allow libvslvm to 
+directly read from a TSK_IMAGE.

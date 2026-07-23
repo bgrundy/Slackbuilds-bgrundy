@@ -2,7 +2,7 @@
 
 # Slackware build script for libvslvm
 #
-# Copyright 2016-2023 Barry J. Grundy (bgrundy<at>linuxleo.com)
+# Copyright 2016-2025 Barry J. Grundy (bgrundy<at>linuxleo.com)
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -20,12 +20,12 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# Updated to v20240301, August 2024
+# Updated to v20240504, April 2025
 
 cd $(dirname $0) ; CWD=$(pwd)
 
 PRGNAM=libvslvm
-VERSION=${VERSION:-20240301}
+VERSION=${VERSION:-20240504}
 STATUS=${STATUS:-experimental}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
