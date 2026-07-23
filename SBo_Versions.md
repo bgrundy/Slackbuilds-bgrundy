@@ -1,7 +1,6 @@
 Standalone Builds:
 development/hexedit              -good (1.6)
-<<<<<<< HEAD
-libraries/afflib                 -good (3.7.21)
+libraries/afflib                 -good (3.7.22)
 network/tcpflow                  -good (1.6.1)
 system/foremost                  -good (1.5.7) 
 system/sleuthkit                 -good (4.12.0)
@@ -13,7 +12,6 @@ system/bulk_extractor            -good (2.1.1)
 libraries/libpff                 -good (20231205)
 libraries/libwrc                 -good (20240421)
 libraries/libbfio                -needs update (20240414) - wait for new TSK
-=======
 libraries/afflib                 -submitted (3.7.22)
 libraries/aff4                   -new (3.3.rc3) fails on fmt error (upgrade fmt?)
 network/tcpflow                  -good (1.6.1)
@@ -28,28 +26,24 @@ libraries/libqcow                -good (20240308)
 system/bulk_extractor            -good (2.1.1)
 libraries/libpff                 -good (20231205)
 libraries/libwrc                 -good (20240421)
->>>>>>> 202502
 python/dpkt                      -good (1.9.8)
 python/python3-elasticsearch     (abandon - elasticsearch5)
 
 # volatility3
 python/pefile                    -good (2024.8.26)
 python/leechcorepyc              -optional: new submission required
-<<<<<<< HEAD
 misc/yara                        -needs update (4.5.5)
 python/python3-yara              -needs update (4.5.2)
 system/volatility3               -needs update (2.27.0)
 
 # volatility
 python/python2-yara              -needs update (4.5.2)
-=======
 misc/yara                        -good (4.5.2)
 python/python3-yara              -good (4.5.0)
 system/volatility3               -good (2.11.0)
 
 # volatility
 python/python2-yara              -good (4.5.0)
->>>>>>> 202502
 python/python2-distorm           -good (3.5.2b)
 system/volatility                -good (2.6.1)
 
