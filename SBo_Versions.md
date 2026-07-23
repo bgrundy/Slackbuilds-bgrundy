@@ -1,10 +1,10 @@
 Standalone Builds:
 development/hexedit              -good (1.6)
-libraries/afflib                 -good (3.7.21)
+libraries/afflib                 -submitted (3.7.22)
 libraries/aff4                   -new (3.3.rc3) fails on fmt error (upgrade fmt?)
 network/tcpflow                  -good (1.6.1)
 system/foremost                  -good (1.5.7) 
-system/sleuthkit                 -submitted (4.14.0)
+system/sleuthkit                 -good (4.14.0)
 libraries/libewf                 -good (20140816)
 libraries/libvhdi                -good (20240509)
 libraries/libvmdk                -good (20240510)
